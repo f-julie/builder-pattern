@@ -21,10 +21,15 @@ public class Order {
         this.item = item;
         this.customername = customername;
         this.shippingaddress = shippingaddress;
+        this.billingaddress = billingaddress;
+        
         this.customeremail = customeremail;
         this.customerphone = customerphone;
+        
+        this.quantity = quantity;
         this.affiliatecode = affiliatecode;
-        this.billingaddress = billingaddress == null ? shippingaddress : billingaddress;
-        this.quantity = quantity == 0 ? 1 : quantity;
+        this.orderPlaced = LocalDate.now()
+
+
     }
 }
